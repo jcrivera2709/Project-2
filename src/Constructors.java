@@ -1,4 +1,4 @@
-// polymorphism
+// constructors and 
 public class Constructors {
   private String name;
   private int health;
@@ -8,7 +8,6 @@ public class Constructors {
     health = 150;
   }
 
-  // constructs
   public Constructors(String name, int health) {
     this.name = name;
     this.health = health;
