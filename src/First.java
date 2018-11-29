@@ -1,9 +1,5 @@
 import java.util.Scanner;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
 import java.util.Random;
-
 
 
 // José Rivera
@@ -11,14 +7,10 @@ import java.util.Random;
 // downloaded java-google-style and Cntrl+Shift+F automatically formatts the project.
 public class First {
 
-
-
   public static void main(String[] args) throws InterruptedException {
 
     Scanner scan = new Scanner(System.in);
     System.out.println("Hello, How can I help you?");
-
-
     System.out.println("How large is your party?");
     // final makes the variable immutable. Casting allows me to make a number into another value.
     final int party = scan.nextInt();
@@ -40,9 +32,7 @@ public class First {
     // String saves a series of characters to a declared variable.
     String str1 = "So we have ";
     String str2 = "six different pizzas for you today.";
-
     System.out.println(str1 + str2);
-
     /*
      * Double saves numbers with decimals/fractional numbers to a stated variable. Long is another
      * built in data type.
@@ -75,11 +65,9 @@ public class First {
     double result = (double) num3 / num4;
     System.out.println(result);
 
-
     String str3 = "It has eight slices. Plus ";
     // length() prints out the length of the string which my first string method
     System.out.println(str3 + str3.length() + " toppings.");
-
 
     String str4;
     str4 =
@@ -130,9 +118,11 @@ public class First {
     double pricePerInch = calculatePricePerInch(pizzaDiameter, pizzaPrice);
     System.out.println("Pizza price per inch = " + pricePerInch);
 
-    System.out.println("Heres the random Number of the day! ");
-    System.out.println(Math.random());
-
+    //Generate and use a random number
+    Random randomGen = new Random();
+    int ran = randomGen.nextInt(31) + 1;
+    System.out.println("Today is the " + ran + " of September");
+    
     // Here I have one escape sequence that tabs my string horizontally to the right.
     System.out.println("\t" + "*Time passes and everyone finishes their meal*");
 
@@ -193,37 +183,8 @@ public class First {
      * method
      */
     System.out.println("Stay " + foodString1.equalsIgnoreCase(foodString2) + " to youreslf!");
-
-    int testCases = scan.nextInt();
-    String str = scan.nextLine();
-
-    // while loop
-    while (testCases >= 0) {
-      str = scan.nextLine();
-
-      char[] charArray = str.toCharArray();
-
-      for (int j = 0; j < str.length(); j++) {
-        if (j % 2 == 0) {
-          System.out.print(charArray[j]);
-        }
-      }
-      System.out.print(" ");
-
-      // enhanced for loop
-      for (int j = 1; j < str.length(); j++) {
-        // even though it says a problem it's not it works correctly
-        if (j % 2 == 1) {
-          System.out.print(charArray[j]);
-        }
-      }
-      System.out.println();
-
-      testCases--;
-    }
-
     
-
+    scan.close();
   }
 
   // new method declirations
@@ -236,16 +197,6 @@ public class First {
     return cpi;
 
   }
-
-  // sum of array
-  static int simpleArraySum(int[] ar) {
-    int sum = 0;
-    for (int i = 0; i < ar.length; i++) {
-      sum += ar[i];
-    }
-    return sum;
-  }
-
 
 }
 
