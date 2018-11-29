@@ -1,15 +1,15 @@
 // polymorphism
-public class Character {
+public class Constructors {
   private String name;
   private int health;
 
-  public Character() {
+  public Constructors() {
     name = "John 117";
     health = 150;
   }
 
   // constructs
-  public Character(String name, int health) {
+  public Constructors(String name, int health) {
     this.name = name;
     this.health = health;
   }
