@@ -187,7 +187,7 @@ public class First {
     scan.close();
   }
 
-  // new method declirations
+  // new method declarations
   public static double calculatePricePerInch(double diameter, double price) {
 
     double cpi;
