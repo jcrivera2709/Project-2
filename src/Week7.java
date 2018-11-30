@@ -44,6 +44,21 @@ public class Week7 {
       System.out.println("Here is a while loop counter " + counter2);
       counter2++;
     }
+
+    // Use break and continue with comments describing what they do
+    System.out.println("starting loop:");
+    for (int n = 0; n < 7; ++n) {
+      System.out.println("in loop: " + n);
+      if (n == 2) {
+        continue; //will not print the PCs surviving for both
+      }
+      System.out.println("   survived first PCs");
+      if (n == 4) {
+        break; //will print only the First day PC surviving
+      }
+      System.out.println("   survived second PCs");
+
+    }
     System.out.println("Thanks for stopping bye!");
     scan.close();
   }
