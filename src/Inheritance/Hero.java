@@ -1,3 +1,4 @@
+package Inheritance;
 //Inheritance allows the coder to derive information from the base class.
 public class Hero extends Characters {
   public void showName() {

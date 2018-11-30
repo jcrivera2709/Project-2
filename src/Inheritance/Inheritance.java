@@ -1,3 +1,5 @@
+package Inheritance;
+
 //Inheritance allows the coder to derive information from the base class and use this information across multiple classes with correct coding.
 public class Inheritance {
   public static void main(String[] args) throws java.lang.Exception {

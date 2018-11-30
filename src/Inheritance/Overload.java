@@ -1,3 +1,4 @@
+package Inheritance;
 
 public class Overload {
   private int score;
