@@ -9,7 +9,7 @@ public class Week7 {
     System.out.println("Type in the first WORD: ");
     String str = scan.nextLine();
 
-    for (int i = 0; i < testCases ; i ++) {
+    for (int i = 0; i < testCases; i++) {
       str = scan.nextLine();
 
       char[] charArray = str.toCharArray();
@@ -29,7 +29,22 @@ public class Week7 {
         }
       }
       System.out.println();
-      
     }
+    System.out.println();
+    int counter = 1;
+    // Create and use do/while loops
+    do {
+      System.out.println("Here is a do while loop counter " + counter);
+      counter++;
+    } while (counter < 3);
+    System.out.println();
+    int counter2 = 1;
+    // Create and use while loops
+    while (counter2 < 3) {
+      System.out.println("Here is a while loop counter " + counter2);
+      counter2++;
+    }
+    System.out.println("Thanks for stopping bye!");
+    scan.close();
   }
 }

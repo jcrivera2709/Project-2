@@ -1,4 +1,4 @@
-////Inheritance allows the coder to derive information from the base class.
+//Inheritance allows the coder to derive information from the base class.
 public class Villian extends Characters {
   public void showName() {
     System.out.println("Lucifer");
