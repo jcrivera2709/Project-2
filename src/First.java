@@ -1,12 +1,14 @@
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
-
-// José Rivera
-// A sweet program to show what what I have learned in COP 2006
-// downloaded java-google-style and Cntrl+Shift+F automatically formatts the project.
+/**
+ * José Rivera A sweet program to show what what I have learned in COP 2006 downloaded
+ * java-google-style and Control+Shift+F automatically formats the project.
+ */
 public class First {
-
+  /**
+   * This class runs all the code in this class. Throwing out interrupted exceptions.
+   */
   public static void main(String[] args) throws InterruptedException {
 
     Scanner scan = new Scanner(System.in);
@@ -118,11 +120,11 @@ public class First {
     double pricePerInch = calculatePricePerInch(pizzaDiameter, pizzaPrice);
     System.out.println("Pizza price per inch = " + pricePerInch);
 
-    //Generate and use a random number
+    // Generate and use a random number
     Random randomGen = new Random();
     int ran = randomGen.nextInt(31) + 1;
     System.out.println("Today is the " + ran + " of September");
-    
+
     // Here I have one escape sequence that tabs my string horizontally to the right.
     System.out.println("\t" + "*Time passes and everyone finishes their meal*");
 
@@ -183,12 +185,17 @@ public class First {
      * method
      */
     System.out.println("Stay " + foodString1.equalsIgnoreCase(foodString2) + " to youreslf!");
-    
+
     scan.close();
   }
 
-  // new method declarations
+  /**
+   * Calculates the price per inc of a circuler object.
+   * 
+   * @return the price calculated.
+   */
   public static double calculatePricePerInch(double diameter, double price) {
+
 
     double cpi;
     double radius = diameter / 2.0;

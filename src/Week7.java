@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Week7 {
+  /**
+   * This class runs all the code in this class. Throwing out interrupted exceptions.
+   */
   public static void main(String[] args) throws InterruptedException {
     Scanner scan = new Scanner(System.in);
 
@@ -50,11 +53,11 @@ public class Week7 {
     for (int n = 0; n < 7; ++n) {
       System.out.println("in loop: " + n);
       if (n == 2) {
-        continue; //will not print the PCs surviving for both
+        continue; // will not print the PCs surviving for both
       }
       System.out.println("   survived first PCs");
       if (n == 4) {
-        break; //will print only the First day PC surviving
+        break; // will print only the First day PC surviving
       }
       System.out.println("   survived second PCs");
 

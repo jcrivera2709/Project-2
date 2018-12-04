@@ -1,6 +1,12 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.Scanner;
 
 public class Week11 {
+  /**
+   * This class runs all the code in this class. Throwing out interrupted exceptions.
+   */
   public static void main(String[] args) throws InterruptedException {
     Scanner scan = new Scanner(System.in);
     try {
@@ -25,6 +31,7 @@ public class Week11 {
         System.out.println("Please enter an integer");
         scan.nextLine();
       }
+      System.out.println(num);
     }
     System.out.println("Thank you!");
 
@@ -41,13 +48,13 @@ public class Week11 {
     } catch (StringIndexOutOfBoundsException ex) {
       System.out.println("StringIndexOutOfBoundsException");
     }
-//    try {
-//      File file = new File("E://file.txt");
-//
-//      FileReader fr = new FileReader(file);
-//    } catch (FileNotFoundException ex) {
-//      System.out.println("File does not exist");
-//    }
+    try {
+      File file = new File("E://file.txt");
+
+      FileReader fr = new FileReader(file);
+    } catch (FileNotFoundException ex) {
+      System.out.println("File does not exist");
+    }
     try {
       int num3 = Integer.parseInt("akki");
       System.out.println(num3);
@@ -55,10 +62,11 @@ public class Week11 {
       System.out.println("Number format exception");
     }
     try {
-      int d[] = new int[5];
+      int[] d = new int[5];
       d[6] = 9;
     } catch (ArrayIndexOutOfBoundsException ex) {
       System.out.println("Array Index is Out Of Bounds");
     }
+    scan.close();
   }
 }
