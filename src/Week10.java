@@ -13,22 +13,21 @@ public class Week10 {
     // Declare, instantiate, initialize and use a one-dimensional array
     int[] arr = new int[10];
     int x = 0;
-    int z;
+    int z = 110;
     // Get a sum of the values in an array using an accumulator.
     for (int i = 0; i < arr.length; i++) {
       int rand = (int) Math.round(Math.random() * 100);
-      z = arr[i];
       arr[i] = rand;
+      if (arr[i] < z) {
+        z = arr[i];
+      }
       x = x + arr[i];
     }
     // Find the smallest value in an array.
     // Search an array and identify the index where a value was found.
-    Arrays.sort(arr);
-    System.out.println("The Min value of the random array is " + arr[0]);
-    System.out.print(" which was found at index 0");
+    System.out.println("The Min value of the random array is " + z);
     System.out.println("The sum of the random array is " + x);
     System.out.println();
-
     // Declare, instantiate, initialize and use multi-dimensional arrays
     int[][] multi = new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9},};
     // Search a two-dimensional array and identify the coordinates where a value was found
