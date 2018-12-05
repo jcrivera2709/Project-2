@@ -1,7 +1,10 @@
 package inheritance;
 
-// Inheritance allows the coder to derive information from the
-// base class and use this information across multiple classes with correct coding.
+/**
+ * Inheritance allows the coder to derive information from the base class and use this information
+ * across multiple classes with correct coding. also known as parent-child classes. is to minimize
+ * the amount of duplicate code in an application by sharing common code amongst several subclasses
+ */
 public class Inheritance {
   /**
    * This class runs all the code in this class. Throwing out interrupted exceptions.
