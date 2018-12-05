@@ -13,9 +13,11 @@ public class Week10 {
     // Declare, instantiate, initialize and use a one-dimensional array
     int[] arr = new int[10];
     int x = 0;
+    int z;
     // Get a sum of the values in an array using an accumulator.
     for (int i = 0; i < arr.length; i++) {
       int rand = (int) Math.round(Math.random() * 100);
+      z = arr[i];
       arr[i] = rand;
       x = x + arr[i];
     }
