@@ -24,10 +24,25 @@ public class Week10 {
       x = x + arr[i];
     }
     // Find the smallest value in an array.
-    // Search an array and identify the index where a value was found.
     System.out.println("The Min value of the random array is " + z);
     System.out.println("The sum of the random array is " + x);
     System.out.println();
+
+    int[] numbers = new int[5];
+    for (int i = 0; i < numbers.length; i++) {
+      System.out.println("Please enter number");
+      numbers[i] = scan.nextInt();
+    }
+    Arrays.sort(numbers);
+    System.out.println("I have sorted the numbers from least to greatest.");
+    System.out.println("Select one of the numbers that you entered.");
+    int selected = scan.nextInt();
+
+    for (int j = 0; j < numbers.length; j++) {
+      if (numbers[j] == selected) {
+        System.out.println("The number you selected is at index :" + j);
+      }
+    }
     // Declare, instantiate, initialize and use multi-dimensional arrays
     int[][] multi = new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9},};
     // Search a two-dimensional array and identify the coordinates where a value was found
